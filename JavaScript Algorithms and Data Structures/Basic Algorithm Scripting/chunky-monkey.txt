@@ -1,0 +1,9 @@
+function chunkArrayInGroups(arr, size) { 
+  let arr2=[];
+  while (arr.length>0){
+    arr2.push(arr.splice(0,Math.min(size, arr.length)))
+  }
+  return arr2;
+}
+
+chunkArrayInGroups(["a", "b", "c", "d"], 2);
