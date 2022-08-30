@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@200&display=swap");
+
+/* https://www.youtube.com/watch?v=PwWHL3RyQgk */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white; /*A64253 861657*/
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  background-color: rgb(22, 20, 20);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#nav-bar {
+}
+
+ul {
+  list-style: none;
+}
+
+.nav-link {
+  color: gold;
+  text-decoration: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+nav ul li a {
+  padding: 10%;
+  transition: all 0.3s ease 0s;
+}
+
+nav ul li a:hover {
+  color: black;
+  background-color: yellow;
+}
+
+#header-img {
+  cursor: pointer;
+  margin-right: auto;
+  height: auto;
+  max-height: 70px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  width: 100%;
+  margin: 100 auto 0 auto;
+}
+
+#features {
+  display: flex;
+  margin-top: 30px;
+}
+
+#features .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20vw;
+  font-size: 55;
+  color: tomato;
+}
+
+@media (max-width: 350px) {
+  #features .icon {
+    display: none;
+  }
+}
+
+#features .desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80vw;
+  padding: 5px;
+}
+
+#form {
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+input {
+  margin: 5px;
+  padding: 2px;
+}
+
+/* @media (max-width: 300px) {
+  header{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0px 50px;
+  }
+  
+} */
+
+.video {
+  max-width: 500px;
+  margin: 40px auto;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  padding: 20px;
+  max-width: 300px;
+}
+
+.card > h4 {
+  margin: 10px;
+}
+
+.card > img {
+  max-width: 190px;
+  height: 200px;
+}
+
+footer {
+  flex-direction: row;
+  background-color: rgb(218, 218, 218);
+  height: auto;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+footer > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 400px) {
+}
+
+footer > ul > li {
+  margin: 0 100px;
+}
+footer a {
+  text-decoration: none;
+}
+
+footer > span {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,10 @@
+function rangeOfNumbers(startNum, endNum) {
+  if (endNum==startNum){
+    return [startNum];
+  }
+  else{
+const rangeArray= rangeOfNumbers(startNum+1, endNum);
+rangeArray.unshift(startNum);
+  return rangeArray;
+  }
+};
