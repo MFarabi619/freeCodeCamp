@@ -1,0 +1,11 @@
+function destroyer(arr) {
+    //use argument[0] syntax to access arguments
+    let newArr=[...arr]
+    //use for loop to remove each number that is passed in as an argument
+    for (let i = 1; i<arguments.length; i++){
+      newArr = newArr.filter(value => value!==arguments[i])
+    }
+    return newArr;
+  }
+
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);

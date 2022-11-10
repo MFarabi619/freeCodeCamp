@@ -1,0 +1,10 @@
+//filter non-alphanumeric characters from string
+//make all chars lowercase
+//check reversed string == string
+
+function palindrome(str) {
+    str = str.replace(/[^0-9a-z]/gi, '').toLowerCase();
+  return [...str].reverse().join("") === str ;
+}
+
+console.log(palindrome("eye"));

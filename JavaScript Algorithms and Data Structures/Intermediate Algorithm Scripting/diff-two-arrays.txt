@@ -1,0 +1,14 @@
+function diffArray(arr1, arr2) {
+  const newArr = [...arr2];
+
+  arr1.forEach(function (element) {
+    if (newArr.includes(element)) {
+      newArr.splice(newArr.indexOf(element), 1);
+    }
+    else newArr.push(element);
+  });
+
+  return newArr;
+}
+
+diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);

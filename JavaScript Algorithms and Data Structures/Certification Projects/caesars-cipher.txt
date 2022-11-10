@@ -1,0 +1,30 @@
+// All letters in the string need to be shifted behind by 13 ASCII numbers
+//use regex to detect letters and leave non-letters alone
+//replace letter ASCII by 13 places behind
+
+function rot13(str) {
+    function shiftCode(letter) {
+        let shiftedStr = '';
+        let charCode = 0;
+
+        for (let elem in letter) {
+
+            if (letter[elem].charCodeAt(0) - 13<65) {
+                charCode = letter[elem].charCodeAt(0) + 13;   
+            }            
+            else charCode = letter[elem].charCodeAt(0) - 13;
+            
+
+            shiftedStr += String.fromCharCode(charCode);
+        }
+        return shiftedStr;
+    }
+    
+    str = str.replace(/([A-Z])/g, shiftCode)
+
+    console.log(str);
+return str;
+}
+
+
+rot13("SERR CVMMN!");

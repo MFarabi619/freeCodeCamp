@@ -1,0 +1,16 @@
+// The number is automatically invalid due any of the following conditions:
+// - Existence of any characters other than numerics, hyphens, and parantheses
+// - If the first character is anything other than a number or a parantheses
+
+// More considerations
+// I can pass the string through a number of filters, if it makes through all the filters then it's valid.
+// If the first character is a 1, the next character must be a space, hyphen, bracket, or another number(that follows the correct format afterwards)
+
+
+//All in all, the easiest way to do this would be to create a regex
+function telephoneCheck(str) {
+  let regExp = /^(1\s?)?(\d{3}|\(\d{3}\))[\-\s]?\d{3}[\-\s]?\d{4}$/g;
+  return regExp.test(str);
+}
+
+telephoneCheck("555-555-5555");

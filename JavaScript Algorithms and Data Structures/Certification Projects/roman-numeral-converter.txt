@@ -1,0 +1,40 @@
+//Ones place digits get I, IV, V, IX
+//Tens place digits get X, XL, L, XC
+//Hundreds place digits get C, CD, D, CM
+//Thousands place digits get M...
+
+function convertToRoman(num) {
+
+    num = ("" + num).split("").reverse(); //split the number into separate digits
+    let onesRoman = ['I', 'IV', 'V', 'IX'];
+    let tensRoman = ['X', 'XL', 'L', 'XC'];
+    let hundredsRoman=['C', 'CD', 'D', 'CM'];
+    let thousandsRoman = ['M'];
+    let romanletters=[onesRoman, tensRoman,hundredsRoman,thousandsRoman]
+
+    let newArr = [];
+
+function pushLetters(digit, letters){//this function reads the digit and chooses letters
+                if (digit<9) {
+                    if (digit < 5) {
+                        if (digit < 4) {
+                            newArr.unshift(letters[0].repeat(digit))
+                        }
+                        else newArr.unshift(letters[1])
+                    }
+                    else newArr.unshift(letters[2] + letters[0].repeat(digit-5))
+                    
+                }
+                else newArr.unshift(letters[3]);
+           } 
+
+    for (let i = num.length - 1; i >= 0; i--){// loop through the digit places
+        pushLetters(num[i], romanletters[i])
+    }
+
+    //the filter method removes empty strings. '' is a false value.
+    //use .join('') to combine the separate elements into a single string
+    return newArr.reverse().filter(e=>e).join(''); 
+}
+
+console.log(convertToRoman(11));
