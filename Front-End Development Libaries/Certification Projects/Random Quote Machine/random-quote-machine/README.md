@@ -1,7 +1,11 @@
 # random-quote-machine
+[Live demo](https://mfarabi619.github.io/random-quote-machine/)
+
+![Picture of project](https://i.ibb.co/QkSpj5g/Screenshot-2022-12-04-100913.jpg)
+
 Hi!
 
-I will be completing freeCodeCamp's Random Quote Machine project which is required for the completion of the Front End Development Libraries certification.
+This is static website that displays random quotes.
 
 The IDE I'm using for development is VS Code with the following relevant extensions:
 
