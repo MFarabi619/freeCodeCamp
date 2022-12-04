@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# random-quote-machine
+Hi!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I will be completing freeCodeCamp's Random Quote Machine project which is required for the completion of the Front End Development Libraries certification.
 
-## Available Scripts
+The IDE I'm using for development is VS Code with the following relevant extensions:
 
-In the project directory, you can run:
+* Auto Rename Tag (Helps autocomplete html tags)
+* Code Runner (Runs Javascript)
+* Color Highlight (Makes the code colorful and thus easier to work with)
+* Prettier Code Formatter (Formats the code to make it look neater)
+* Quokka.js (Displays runtime values next to the line of code so that I don't have to run console.log as much)
+* Vim (Allows use of Vim inside VS Code)
+vscode-icons (Overhaul of default VS Code icons to improve development experience)
 
-### `npm start`
+The goal(s) of this project will be as follows:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* Attain a better understanding of React, Redux, Bootstrap, and SaSS.
+* Improve at making focused commits with detailed documentation to show progress of project.
+* Use the GitHub Projects feature to break the project down to smaller, easily-achievable chunks.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+Learning log:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* Was introduced to React hooks, and realized that they were far easier to work with than the class system taught in the current freeCodeCamp curriculum. 
+* Learned and used some basic folder structure so that project could be easily scaled in the future
+* Gained experience planning out the project, and breaking large tasks into smaller tasks, which made the project as a whole seem less daunting.
