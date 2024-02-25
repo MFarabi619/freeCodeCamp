@@ -1,0 +1,270 @@
+FAILED TEST LOG
+  ✘ SUBTASKS 1.1 "before all" hook for ":1 "worldcup" database should exist"
+
+Error: Cannot connect to PostgreSQL
+error: database "worldcup" does not exist
+at Context.<anonymous> (test/1.1.test.js:27:13)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+FAILED TEST LOG
+  ✘ SUBTASKS 1.1 :3 Your "teams" table should have the correct "team_id" and "name" columns
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(teamIdPKeyRes.rowCount > 0 && nameColumnRes.rowCount > 0)
+
+at Context.<anonymous> (test/1.1.test.js:75:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :4 Your "games" table should have the correct "game_id", "year", and "round" columns
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(gameIdPKeyRes.rowCount > 0 && yearColumnRes.rowCount > 0 && roundColumnRes.rowCount > 0)
+
+at Context.<anonymous> (test/1.1.test.js:89:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :5 Your "games" table should have correct "winner_id" and "opponent_id" foreign key columns
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(foreignKeys.length > 1)
+
+at Context.<anonymous> (test/1.1.test.js:105:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :6 Your "games" table should have correct "winner_goals" and "opponent_goals" columns
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(winnerColumnRes.rowCount > 0 && opponentColumnRes.rowCount > 0)
+
+at Context.<anonymous> (test/1.1.test.js:117:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :7 All of your columns should have the "NOT NULL" constraint
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(allColumnsRes.rowCount > 0 && notNullColumnsRes.rowCount === allColumnsRes.rowCount)
+
+at Context.<anonymous> (test/1.1.test.js:128:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :9 Your "insert_data.sh" script should add each unique team to the "teams" table
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(res.rowCount === 24)
+
+at Context.<anonymous> (test/1.1.test.js:151:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :10 Your "insert_data.sh" script should add a row in the "games" table for each game
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(res.rowCount === 32 && finalRows.length === 2 && res2.rows[0].name === 'France')
+
+at Context.<anonymous> (test/1.1.test.js:169:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+An error occurred running ../queries.sh
+ERROR:  column "winner_goals" does not exist
+LINE 1: SELECT SUM(winner_goals) FROM games
+                   ^
+  ✘ SUBTASKS 1.1 :11 You should correctly complete the "queries.sh" file
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(scriptOutput === expectedOutput)
+
+at Context.<anonymous> (test/1.1.test.js:185:5)
+FAILED TEST LOG
+  ✘ SUBTASKS 1.1 :4 Your "games" table should have the correct "game_id", "year", and "round" columns
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(gameIdPKeyRes.rowCount > 0 && yearColumnRes.rowCount > 0 && roundColumnRes.rowCount > 0)
+
+at Context.<anonymous> (test/1.1.test.js:89:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :5 Your "games" table should have correct "winner_id" and "opponent_id" foreign key columns
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(foreignKeys.length > 1)
+
+at Context.<anonymous> (test/1.1.test.js:105:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :6 Your "games" table should have correct "winner_goals" and "opponent_goals" columns
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(winnerColumnRes.rowCount > 0 && opponentColumnRes.rowCount > 0)
+
+at Context.<anonymous> (test/1.1.test.js:117:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :7 All of your columns should have the "NOT NULL" constraint
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(allColumnsRes.rowCount > 0 && notNullColumnsRes.rowCount === allColumnsRes.rowCount)
+
+at Context.<anonymous> (test/1.1.test.js:128:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :9 Your "insert_data.sh" script should add each unique team to the "teams" table
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(res.rowCount === 24)
+
+at Context.<anonymous> (test/1.1.test.js:151:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :10 Your "insert_data.sh" script should add a row in the "games" table for each game
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(res.rowCount === 32 && finalRows.length === 2 && res2.rows[0].name === 'France')
+
+at Context.<anonymous> (test/1.1.test.js:169:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+An error occurred running ../queries.sh
+ERROR:  column "winner_goals" does not exist
+LINE 1: SELECT SUM(winner_goals) FROM games
+                   ^
+  ✘ SUBTASKS 1.1 :11 You should correctly complete the "queries.sh" file
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(scriptOutput === expectedOutput)
+
+at Context.<anonymous> (test/1.1.test.js:185:5)
+FAILED TEST LOG
+  ✘ SUBTASKS 1.1 :6 Your "games" table should have correct "winner_goals" and "opponent_goals" columns
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(winnerColumnRes.rowCount > 0 && opponentColumnRes.rowCount > 0)
+
+at Context.<anonymous> (test/1.1.test.js:117:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :7 All of your columns should have the "NOT NULL" constraint
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(allColumnsRes.rowCount > 0 && notNullColumnsRes.rowCount === allColumnsRes.rowCount)
+
+at Context.<anonymous> (test/1.1.test.js:128:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :9 Your "insert_data.sh" script should add each unique team to the "teams" table
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(res.rowCount === 24)
+
+at Context.<anonymous> (test/1.1.test.js:151:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :10 Your "insert_data.sh" script should add a row in the "games" table for each game
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(res.rowCount === 32 && finalRows.length === 2 && res2.rows[0].name === 'France')
+
+at Context.<anonymous> (test/1.1.test.js:169:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+An error occurred running ../queries.sh
+ERROR:  column "winner_goals" does not exist
+LINE 1: SELECT SUM(winner_goals) FROM games
+                   ^
+  ✘ SUBTASKS 1.1 :11 You should correctly complete the "queries.sh" file
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(scriptOutput === expectedOutput)
+
+at Context.<anonymous> (test/1.1.test.js:185:5)
+FAILED TEST LOG
+  ✘ SUBTASKS 1.1 :7 All of your columns should have the "NOT NULL" constraint
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(allColumnsRes.rowCount > 0 && notNullColumnsRes.rowCount === allColumnsRes.rowCount)
+
+at Context.<anonymous> (test/1.1.test.js:128:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :9 Your "insert_data.sh" script should add each unique team to the "teams" table
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(res.rowCount === 24)
+
+at Context.<anonymous> (test/1.1.test.js:151:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :10 Your "insert_data.sh" script should add a row in the "games" table for each game
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(res.rowCount === 32 && finalRows.length === 2 && res2.rows[0].name === 'France')
+
+at Context.<anonymous> (test/1.1.test.js:169:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :11 You should correctly complete the "queries.sh" file
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(scriptOutput === expectedOutput)
+
+at Context.<anonymous> (test/1.1.test.js:185:5)
+FAILED TEST LOG
+  ✘ SUBTASKS 1.1 :7 All of your columns should have the "NOT NULL" constraint
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(allColumnsRes.rowCount > 0 && notNullColumnsRes.rowCount === allColumnsRes.rowCount)
+
+at Context.<anonymous> (test/1.1.test.js:128:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :9 Your "insert_data.sh" script should add each unique team to the "teams" table
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(res.rowCount === 24)
+
+at Context.<anonymous> (test/1.1.test.js:151:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :10 Your "insert_data.sh" script should add a row in the "games" table for each game
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(res.rowCount === 32 && finalRows.length === 2 && res2.rows[0].name === 'France')
+
+at Context.<anonymous> (test/1.1.test.js:169:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :11 You should correctly complete the "queries.sh" file
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(scriptOutput === expectedOutput)
+
+at Context.<anonymous> (test/1.1.test.js:185:5)
+FAILED TEST LOG
+  ✘ SUBTASKS 1.1 :9 Your "insert_data.sh" script should add each unique team to the "teams" table
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(res.rowCount === 24)
+
+at Context.<anonymous> (test/1.1.test.js:151:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :10 Your "insert_data.sh" script should add a row in the "games" table for each game
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(res.rowCount === 32 && finalRows.length === 2 && res2.rows[0].name === 'France')
+
+at Context.<anonymous> (test/1.1.test.js:169:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :11 You should correctly complete the "queries.sh" file
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(scriptOutput === expectedOutput)
+
+at Context.<anonymous> (test/1.1.test.js:185:5)

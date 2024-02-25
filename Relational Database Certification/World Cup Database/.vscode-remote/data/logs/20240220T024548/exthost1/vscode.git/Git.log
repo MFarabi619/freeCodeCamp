@@ -1,0 +1,32 @@
+2024-02-20 02:45:57.282 [info] Log level: Info
+2024-02-20 02:45:57.282 [info] Validating found git in: "git"
+2024-02-20 02:45:57.282 [info] Using git "2.43.0" from "git"
+2024-02-20 02:45:57.282 [info] > git rev-parse --show-toplevel [7ms]
+2024-02-20 02:45:57.282 [info] > git rev-parse --git-dir --git-common-dir [37ms]
+2024-02-20 02:45:57.282 [info] Open repository: /workspace/project
+2024-02-20 02:45:57.282 [info] > git rev-parse --show-toplevel [10ms]
+2024-02-20 02:45:57.282 [info] > git config --get commit.template [24ms]
+2024-02-20 02:45:57.282 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2024-02-20 02:45:57.282 [info] > git rev-parse --show-toplevel [18ms]
+2024-02-20 02:45:57.282 [warning] ENOENT: no such file or directory, open '/workspace/project/.git/refs/remotes/origin/main'
+2024-02-20 02:45:57.282 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2024-02-20 02:45:57.282 [info] > git status -z -uall [4ms]
+2024-02-20 02:45:57.282 [info] > git config --get commit.template [57ms]
+2024-02-20 02:45:57.282 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2024-02-20 02:45:57.282 [warning] ENOENT: no such file or directory, open '/workspace/project/.git/refs/remotes/origin/main'
+2024-02-20 02:45:57.282 [info] > git rev-parse refs/remotes/origin/main [16ms]
+2024-02-20 02:45:57.282 [info] > git status -z -uall [3ms]
+2024-02-20 02:45:58.961 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-02-20 02:45:58.962 [warning] git config failed: Failed to execute git
+2024-02-20 02:50:58.863 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-02-20 02:50:58.863 [warning] git config failed: Failed to execute git
+2024-02-20 02:55:58.877 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-02-20 02:55:58.877 [warning] git config failed: Failed to execute git
+2024-02-20 03:00:58.888 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-02-20 03:00:58.888 [warning] git config failed: Failed to execute git
+2024-02-20 03:05:58.901 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-02-20 03:05:58.901 [warning] git config failed: Failed to execute git
+2024-02-20 03:10:58.918 [info] > git config --local branch.main.github-pr-owner-number [2ms]
+2024-02-20 03:10:58.919 [warning] git config failed: Failed to execute git
+2024-02-20 03:15:58.929 [info] > git config --local branch.main.github-pr-owner-number [2ms]
+2024-02-20 03:15:58.929 [warning] git config failed: Failed to execute git

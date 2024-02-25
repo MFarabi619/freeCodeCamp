@@ -1,0 +1,34 @@
+2024-02-20 04:09:30.490 [info] 
+
+
+
+
+2024-02-20 04:09:30.506 [info] Extension host agent started.
+2024-02-20 04:09:30.558 [info] Extension 'gitpod.gitpod-theme' v0.0.2 is already installed. Use '--force' option to update to latest version or provide '@<version>' to install a specific version, for example: 'gitpod.gitpod-theme@1.2.3'.
+2024-02-20 04:09:30.558 [info] Extension 'github.vscode-pull-request-github' v0.80.1 is already installed. Use '--force' option to update to latest version or provide '@<version>' to install a specific version, for example: 'github.vscode-pull-request-github@1.2.3'.
+2024-02-20 04:09:30.559 [info] Installing extensions...
+2024-02-20 04:09:30.572 [info] Extension 'coderoad.coderoad' v0.19.4 is already installed. Use '--force' option to update to latest version or provide '@<version>' to install a specific version, for example: 'coderoad.coderoad@1.2.3'.
+2024-02-20 04:09:31.618 [info] [192.168.135.12][d0e94c2e][ManagementConnection] New connection established.
+2024-02-20 04:09:31.910 [warning] Skipping extension /workspace/.vscode-remote/extensions/gitpod.gitpod-theme-0.0.2-universal in favour of the builtin extension /ide/extensions/gitpod.gitpod-theme.
+2024-02-20 04:09:31.935 [info] [192.168.41.138][b008d44a][ExtensionHostConnection] New connection established.
+2024-02-20 04:09:31.985 [info] [192.168.41.138][b008d44a][ExtensionHostConnection] <460> Launched Extension Host Process.
+2024-02-20 04:10:02.502 [info] [192.168.135.12][d0e94c2e][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-02-20 04:10:02.549 [info] [192.168.41.138][b008d44a][ExtensionHostConnection] <460> Extension Host Process exited with code: 0, signal: null.
+2024-02-20 04:10:04.529 [info] [192.168.135.12][3ced9ff6][ManagementConnection] New connection established.
+2024-02-20 04:10:04.765 [warning] Skipping extension /workspace/.vscode-remote/extensions/gitpod.gitpod-theme-0.0.2-universal in favour of the builtin extension /ide/extensions/gitpod.gitpod-theme.
+2024-02-20 04:10:04.852 [info] [192.168.41.138][52de3547][ExtensionHostConnection] New connection established.
+2024-02-20 04:10:04.862 [info] [192.168.41.138][52de3547][ExtensionHostConnection] <777> Launched Extension Host Process.
+2024-02-20 04:10:05.430 [info] [192.168.135.12][3ced9ff6][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-02-20 04:10:07.755 [info] [192.168.41.138][abd54dd9][ManagementConnection] New connection established.
+2024-02-20 04:10:07.988 [warning] Skipping extension /workspace/.vscode-remote/extensions/gitpod.gitpod-theme-0.0.2-universal in favour of the builtin extension /ide/extensions/gitpod.gitpod-theme.
+2024-02-20 04:10:08.080 [info] [192.168.177.200][b53780c9][ExtensionHostConnection] New connection established.
+2024-02-20 04:10:08.091 [info] [192.168.177.200][b53780c9][ExtensionHostConnection] <804> Launched Extension Host Process.
+2024-02-20 04:10:10.581 [info] [192.168.41.138][abd54dd9][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-02-20 04:10:10.634 [info] [192.168.177.200][b53780c9][ExtensionHostConnection] <804> Extension Host Process exited with code: 0, signal: null.
+2024-02-20 04:10:52.043 [info] [192.168.177.200][48c170ca][ManagementConnection] New connection established.
+2024-02-20 04:10:52.282 [warning] Skipping extension /workspace/.vscode-remote/extensions/gitpod.gitpod-theme-0.0.2-universal in favour of the builtin extension /ide/extensions/gitpod.gitpod-theme.
+2024-02-20 04:10:52.347 [info] [192.168.41.138][c77e796e][ExtensionHostConnection] New connection established.
+2024-02-20 04:10:52.369 [info] [192.168.41.138][c77e796e][ExtensionHostConnection] <910> Launched Extension Host Process.
+2024-02-20 04:13:10.254 [info] [192.168.177.200][48c170ca][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-02-20 04:13:10.302 [info] [192.168.41.138][c77e796e][ExtensionHostConnection] <910> Extension Host Process exited with code: 0, signal: null.
+2024-02-20 04:15:07.868 [info] [192.168.41.138][52de3547][ExtensionHostConnection] <777> Extension Host Process exited with code: 0, signal: null.

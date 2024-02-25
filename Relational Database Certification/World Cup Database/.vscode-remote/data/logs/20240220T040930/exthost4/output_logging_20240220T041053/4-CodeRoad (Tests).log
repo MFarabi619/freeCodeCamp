@@ -1,0 +1,14 @@
+FAILED TEST LOG
+  ✘ SUBTASKS 1.1 "before all" hook for ":1 "worldcup" database should exist"
+
+Error: Cannot connect to PostgreSQL
+error: database "worldcup" does not exist
+at Context.<anonymous> (test/1.1.test.js:27:13)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+FAILED TEST LOG
+  ✘ SUBTASKS 1.1 "before all" hook for ":1 "worldcup" database should exist"
+
+Error: Cannot connect to PostgreSQL
+error: database "worldcup" does not exist
+at Context.<anonymous> (test/1.1.test.js:27:13)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)

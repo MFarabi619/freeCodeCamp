@@ -1,0 +1,306 @@
+FAILED TEST LOG
+  ✘ SUBTASKS 1.1 "before all" hook for ":1 "worldcup" database should exist"
+
+Error: Cannot connect to PostgreSQL
+error: database "worldcup" does not exist
+at Context.<anonymous> (test/1.1.test.js:27:13)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+FAILED TEST LOG
+  ✘ SUBTASKS 1.1 :9 Your "insert_data.sh" script should add each unique team to the "teams" table
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(res.rowCount === 24)
+
+at Context.<anonymous> (test/1.1.test.js:151:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :10 Your "insert_data.sh" script should add a row in the "games" table for each game
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(res.rowCount === 32 && finalRows.length === 2 && res2.rows[0].name === 'France')
+
+at Context.<anonymous> (test/1.1.test.js:169:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 :11 You should correctly complete the "queries.sh" file
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(scriptOutput === expectedOutput)
+
+at Context.<anonymous> (test/1.1.test.js:185:5)
+FAILED TEST LOG
+  ✘ SUBTASKS 1.1 "before all" hook for ":1 "worldcup" database should exist"
+
+Error: Cannot connect to PostgreSQL
+Error: Command failed: ../insert_data.sh test
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(France) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Croatia) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Belgium) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(France) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(England) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Belgium) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Croatia) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(France) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Germany) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Netherlands) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Argentina) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Brazil) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Germany) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Brazil) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(France) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Germany) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Netherlands) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Argentina) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Belgium) already exists.
+
+at Context.<anonymous> (test/1.1.test.js:27:13)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+FAILED TEST LOG
+  ✘ SUBTASKS 1.1 "before all" hook for ":1 "worldcup" database should exist"
+
+Error: Cannot connect to PostgreSQL
+Error: Command failed: ../insert_data.sh test
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(France) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Croatia) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Belgium) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(France) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(England) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Belgium) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Croatia) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(France) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Germany) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Netherlands) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Argentina) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Brazil) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Germany) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Brazil) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(France) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Germany) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Netherlands) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Argentina) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Belgium) already exists.
+
+at Context.<anonymous> (test/1.1.test.js:27:13)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+FAILED TEST LOG
+  ✘ SUBTASKS 1.1 "before all" hook for ":1 "worldcup" database should exist"
+
+Error: Cannot connect to PostgreSQL
+Error: Command failed: ../insert_data.sh test
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(France) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Croatia) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Belgium) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(France) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(England) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Belgium) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Croatia) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(France) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Germany) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Netherlands) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Argentina) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Brazil) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Germany) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Brazil) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(France) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Germany) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Netherlands) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Argentina) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Belgium) already exists.
+
+at Context.<anonymous> (test/1.1.test.js:27:13)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+FAILED TEST LOG
+  ✘ SUBTASKS 1.1 "before all" hook for ":1 "worldcup" database should exist"
+
+Error: Cannot connect to PostgreSQL
+Error: Command failed: ../insert_data.sh test
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(France) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Croatia) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Belgium) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(France) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(England) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Belgium) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Croatia) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(France) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Germany) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Netherlands) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Argentina) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Brazil) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Germany) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Brazil) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(France) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Germany) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Netherlands) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Argentina) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Belgium) already exists.
+
+at Context.<anonymous> (test/1.1.test.js:27:13)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+FAILED TEST LOG
+  ✘ SUBTASKS 1.1 "before all" hook for ":1 "worldcup" database should exist"
+
+Error: Cannot connect to PostgreSQL
+Error: Command failed: ../insert_data.sh test
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(France) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Croatia) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Belgium) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(France) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(England) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Belgium) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Croatia) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(France) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Germany) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Netherlands) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Argentina) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Brazil) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Germany) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Brazil) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(France) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Germany) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Netherlands) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Argentina) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Belgium) already exists.
+
+at Context.<anonymous> (test/1.1.test.js:27:13)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+FAILED TEST LOG
+  ✘ SUBTASKS 1.1 "before all" hook for ":1 "worldcup" database should exist"
+
+Error: Cannot connect to PostgreSQL
+Error: Command failed: ../insert_data.sh test
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(France) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Croatia) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Belgium) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(France) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(England) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Belgium) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Croatia) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(France) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Germany) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Netherlands) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Argentina) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Brazil) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Germany) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Brazil) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(France) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Germany) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Netherlands) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Argentina) already exists.
+ERROR:  duplicate key value violates unique constraint "teams_name_key"
+DETAIL:  Key (name)=(Belgium) already exists.
+
+at Context.<anonymous> (test/1.1.test.js:27:13)
